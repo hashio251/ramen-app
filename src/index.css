@@ -1,0 +1,18 @@
+@import './styles/fonts.css';
+@import 'tailwindcss';
+@import './styles/theme.css';
+
+@layer base {
+  body {
+    @apply bg-background font-sans text-foreground antialiased;
+  }
+  button, select {
+    @apply cursor-pointer;
+  }
+  button:disabled {
+    @apply cursor-not-allowed;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-4 outline-primary;
+  }
+}
